@@ -30,6 +30,10 @@
 		C85263FF2F18BF870083198D /* invoice_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85263D62F18AAE10083198D /* invoice_model.swift */; };
 		C85264002F18BF8C0083198D /* login_model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85263D52F18A3C10083198D /* login_model.swift */; };
 		C85264022F18D2FC0083198D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85264012F18D2FC0083198D /* GoogleService-Info.plist */; };
+		C85264052F18D5980083198D /* signup_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85264042F18D5960083198D /* signup_view.swift */; };
+		C85264072F18DC210083198D /* main_tab_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85264062F18DC200083198D /* main_tab_view.swift */; };
+		C85264092F18DC350083198D /* profile_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85264082F18DC340083198D /* profile_view.swift */; };
+		C852640B2F18DC420083198D /* analysis_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = C852640A2F18DC420083198D /* analysis_view.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		C85263DA2F18AC630083198D /* auth_service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auth_service.swift; sourceTree = "<group>"; };
 		C85263DB2F18AD7F0083198D /* smartbilling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartbilling.swift; sourceTree = "<group>"; };
 		C85264012F18D2FC0083198D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C85264042F18D5960083198D /* signup_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup_view.swift; sourceTree = "<group>"; };
+		C85264062F18DC200083198D /* main_tab_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main_tab_view.swift; sourceTree = "<group>"; };
+		C85264082F18DC340083198D /* profile_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile_view.swift; sourceTree = "<group>"; };
+		C852640A2F18DC420083198D /* analysis_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = analysis_view.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,10 @@
 		C85263CF2F18A2680083198D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C852640A2F18DC420083198D /* analysis_view.swift */,
+				C85264082F18DC340083198D /* profile_view.swift */,
+				C85264062F18DC200083198D /* main_tab_view.swift */,
+				C85264042F18D5960083198D /* signup_view.swift */,
 				C85263D82F18AB0B0083198D /* dashboard_view.swift */,
 				C85263D32F18A3990083198D /* login_view.swift */,
 			);
@@ -228,9 +240,13 @@
 				C85263FD2F18BF750083198D /* dashboard_viewmodel.swift in Sources */,
 				C85263FC2F18BF6B0083198D /* dashboard_view.swift in Sources */,
 				C85263FB2F18BEDD0083198D /* login_viewmodel.swift in Sources */,
+				C85264072F18DC210083198D /* main_tab_view.swift in Sources */,
 				C85264002F18BF8C0083198D /* login_model.swift in Sources */,
+				C85264092F18DC350083198D /* profile_view.swift in Sources */,
+				C852640B2F18DC420083198D /* analysis_view.swift in Sources */,
 				C85263DC2F18AEE40083198D /* smartbilling.swift in Sources */,
 				C85263FF2F18BF870083198D /* invoice_model.swift in Sources */,
+				C85264052F18D5980083198D /* signup_view.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

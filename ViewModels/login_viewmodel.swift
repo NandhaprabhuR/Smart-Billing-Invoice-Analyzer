@@ -24,4 +24,24 @@ class LoginViewModel: ObservableObject {
             }
         }
     }
+    
+    func signUp() {
+        guard !email.isEmpty && !password.isEmpty else {
+            self.errorMessage = "Please enter both an email and password."
+            return
+        }
+        
+        self.isLoading = true
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] result, error in
+            DispatchQueue.main.async {
+                self?.isLoading = false
+                if let error = error {
+                    self?.errorMessage = error.localizedDescription
+                } else {
+                    self?.isAuthenticated = true
+                }
+            }
+        }
+    }
 }

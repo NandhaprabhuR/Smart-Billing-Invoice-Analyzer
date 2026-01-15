@@ -17,11 +17,9 @@ struct LoginView: View {
                 VStack(alignment: .leading, spacing: 15) {
                     TextField("Email Address", text: $viewModel.email)
                         .padding()
-                        // FIX: Use .secondary background to avoid UIKit/UIColor errors
                         .background(Color.secondary.opacity(0.1))
                         .cornerRadius(10)
-                        // FIX: Use platform-neutral modifiers
-                        .disableAutocorrection(true)
+                        .textInputAutocapitalization(.never)
                     
                     SecureField("Password", text: $viewModel.password)
                         .padding()
@@ -51,11 +49,18 @@ struct LoginView: View {
                 }
                 .padding(.horizontal)
                 
+                NavigationLink(destination: SignUpView()) {
+                    Text("Don't have an account? Sign Up")
+                        .font(.footnote)
+                        .foregroundColor(.blue)
+                }
+                .padding(.top, 10)
+                
                 Spacer()
             }
             .padding(.top, 50)
             .navigationDestination(isPresented: $viewModel.isAuthenticated) {
-                DashboardView()
+                MainTabView()
             }
         }
     }
